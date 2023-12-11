@@ -70,7 +70,7 @@ usersConectedFunction()
   return (
     <form onSubmit={submitForm} className='form-login'>
    <div className='content-form-container'>
-   <label>Ingrese Su Nombre En EL chat</label>
+   <label>Nombre Usuario</label>
    <input className='input-form' onChange={challengeInput} type='text' placeholder='Nombre'></input>
    </div>
 <button className='btn-login' type='submit'>Ingresar</button>

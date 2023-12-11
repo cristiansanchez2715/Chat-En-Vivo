@@ -5,7 +5,7 @@
 
 body, html{
   background-color: white;
-  background-image: url('./components/assets/oficina.jpg');
+  /* background-image: url('./components/assets/oficina.jpg'); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -136,7 +136,7 @@ border-radius: 10px;
 .message{
   background-color:rgba(0 0 0 0.5);
   color: white;
-  width: 200px;
+  width: 400px;
   height: auto;
    
 }
@@ -189,4 +189,438 @@ margin-left: center;
 .form-sendmessage{
   display: flex;
   flex-direction: column;
+}
+
+
+@media(min-width: 320px){
+  .home-container {
+    margin-left: 10vw;
+    width: 100vw;
+}
+
+body, html{
+  background-color: rgba(10, 10, 63, 0.5);
+  background-image: url('./components/assets/oficina.jpg');
+   background-size: 100% 100%; 
+    background-repeat: no-repeat;
+  width: 240vw;
+  height: 240vh;
+
+}
+.container-messages {
+  background-color: green;
+  z-index: 9;
+  color: white;
+  width: 250vw;
+  height: 150px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-left: -10vw;
+  border-radius: 10px;
+}
+
+.inputs-container {
+  top: 950px;
+  width: 600px;
+  color: white;
+  border: 0.5px solid black;
+left: 85px;
+  position: absolute;
+  /* box-shadow: 1px 1px 1px 1px black; */
+}
+
+
+.chat-container{
+  position: absolute;
+ 
+  width: 635px;
+  height: 300px;
+  top: 650px;
+  left: 0px;
+  background-color: rgba(0, 0, 255, 0.5);
+  overflow-y: auto;
+}
+
+.little-console-container {
+  background-image: url(http://localhost:3000/static/media/fondologo-removebg-preview.cf01388….png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  box-sizing: 1px 1px 1px 1px black;
+  width: 240vw;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+  top: 150px;
+}
+
+
+.users-conected-container {
+  position: absolute;
+  left: 0px;
+  top: 150px;
+  border: 0.5px solid black;
+  box-sizing: 1px 1px 1px 2px black;
+  width: 200px;
+  height: 500px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+}
+
+.img-container {
+  position: absolute;
+  left: 250px;
+  color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 100px;
+}
+
+}
+
+@media(min-width: 460px){
+
+  .img-container {
+    position: absolute;
+    left: 400px;
+    color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(0, 0, 0, 0.5);
+    top: 100px;
+}
+
+
+.chat-container{
+  position: absolute;
+ 
+  width: 635px;
+  height: 300px;
+  top: 650px;
+  left: 200px;
+  background-color: rgba(0, 0, 255, 0.5);
+  overflow-y: auto;
+}
+
+.inputs-container {
+  top: 950px;
+  width: 600px;
+  color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.5px solid black;
+left: 150px;
+  position: absolute;
+  /* box-shadow: 1px 1px 1px 1px black; */
+}
+
+body, html{
+  background-color: rgba(10, 10, 63, 0.5);
+  background-image: url('./components/assets/oficina.jpg');
+   background-size: 100% 100%; 
+    background-repeat: no-repeat;
+  width: 240vw;
+  height: 250vh;
+
+}
+
+}
+
+@media(min-width: 580px){
+  .img-container {
+    position: absolute;
+    left: 500px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 100px;
+}
+.users-conected-container {
+  position: absolute;
+  left: 0px;
+  top: 175px;
+  border: 0.5px solid black;
+  box-sizing: 1px 1px 1px 2px black;
+  width: 200px;
+  height: 500px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+}
+
+
+.chat-container{
+  position: absolute;
+ 
+  width: 635px;
+  height: 300px;
+  top: 650px;
+  left: 400px;
+  background-color: rgba(0, 0, 255, 0.5);
+  overflow-y: auto;
+}
+
+.inputs-container {
+  top: 950px;
+  width: 600px;
+  color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.5px solid black;
+  left: 360px;
+  position: absolute;
+  /* box-shadow: 1px 1px 1px 1px black; */
+}
+
+}
+
+@media(min-width: 720px){
+
+  .img-container {
+    position: absolute;
+    left: 700px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 100px;
+}
+
+
+.chat-container{
+  position: absolute;
+ 
+  width: 635px;
+  height: 300px;
+  top: 650px;
+  left: 600px;
+  background-color: rgba(0, 0, 255, 0.5);
+  overflow-y: auto;
+}
+
+.inputs-container {
+  top: 950px;
+  width: 600px;
+  color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.5px solid black;
+  left: 560px;
+  position: absolute;
+  /* box-shadow: 1px 1px 1px 1px black; */
+}
+
+}
+
+@media(min-width: 900px){
+  
+  .img-container {
+    position: absolute;
+    left: 850px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 100px;
+}
+
+
+.chat-container{
+  position: absolute;
+ 
+  width: 635px;
+  height: 300px;
+  top: 650px;
+  left: 750px;
+  background-color: rgba(0, 0, 255, 0.5);
+  overflow-y: auto;
+}
+
+.inputs-container {
+  top: 950px;
+  width: 600px;
+  color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.5px solid black;
+  left: 700px;
+  position: absolute;
+  /* box-shadow: 1px 1px 1px 1px black; */
+}
+
+}
+
+@media(min-width: 1280px){
+  .img-container {
+    position: absolute;
+    left: 450px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 100px;
+}
+
+.img-chat {
+  width: 300px;
+  height: 300px;
+}
+
+.container-messages {
+  background-color: green;
+  z-index: 9;
+  color: #ffffff;
+  width: 110vw;
+  height: 150px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-left: -10vw;
+  border-radius: 10px;
+}
+
+
+body, html{
+  background-color: rgba(10, 10, 63, 0.5);
+  background-image: url('./components/assets/oficina.jpg');
+   background-size: 100% 100%; 
+    background-repeat: no-repeat;
+  width: 100vw;
+  height: 200vh;
+
+}
+
+.chat-container{
+  position: absolute;
+ 
+  width: 635px;
+  height: 300px;
+  top: 650px;
+  left: 450px;
+  background-color: rgba(0, 0, 255, 0.5);
+  overflow-y: auto;
+}
+
+.inputs-container {
+  top: 975px;
+  width: 600px;
+  color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.5px solid black;
+  left: 350px;
+  position: absolute;
+  /* box-shadow: 1px 1px 1px 1px black; */
+}
+
+
+.little-console-container {
+  background-image: url(http://localhost:3000/static/media/fondologo-removebg-preview.cf01388….png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  box-sizing: 1px 1px 1px 1px black;
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+  top: 150px;
+}
+
+
+.users-conected-container {
+  position: fixed;
+  left: 0px;
+  top: 150px;
+  border: 0.5px solid black;
+  box-sizing: 1px 1px 1px 2px black;
+  width: 200px;
+  height: 500px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+}
+
+
+
+
+}
+
+@media(min-width: 1400px){
+  .img-container {
+    position: absolute;
+    left: 450px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 100px;
+}
+
+.img-chat {
+  width: 300px;
+  height: 300px;
+}
+
+.container-messages {
+  background-color: green;
+  z-index: 9;
+  color: #ffffff;
+  width: 110vw;
+  height: 150px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-left: -10vw;
+  border-radius: 10px;
+}
+
+
+body, html{
+  background-color: rgba(10, 10, 63, 0.5);
+  background-image: url('./components/assets/oficina.jpg');
+   background-size: 100% 100%; 
+    background-repeat: no-repeat;
+  width: 100vw;
+  height: 200vh;
+
+}
+
+.chat-container{
+  position: absolute;
+ 
+  width: 635px;
+  height: 300px;
+  top: 650px;
+  left: 450px;
+  background-color: rgba(0, 0, 255, 0.5);
+  overflow-y: auto;
+}
+
+.inputs-container {
+  top: 975px;
+  width: 600px;
+  color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.5px solid black;
+  left: 350px;
+  position: absolute;
+  /* box-shadow: 1px 1px 1px 1px black; */
+}
+
+
+.little-console-container {
+  background-image: url(http://localhost:3000/static/media/fondologo-removebg-preview.cf01388….png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  box-sizing: 1px 1px 1px 1px black;
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+  top: 150px;
+}
+
+
+.users-conected-container {
+  position: fixed;
+  left: 0px;
+  top: 150px;
+  border: 0.5px solid black;
+  box-sizing: 1px 1px 1px 2px black;
+  width: 200px;
+  height: 500px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+}
+
+
+
 }
