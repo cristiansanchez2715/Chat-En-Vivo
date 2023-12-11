@@ -1,0 +1,192 @@
+.App {
+  text-align: center;
+
+}
+
+body, html{
+  background-color: white;
+  background-image: url('./components/assets/oficina.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.error{
+  color: red;
+}
+
+
+/* Login  */
+.form-login{
+  width: 500px;
+  height: 300px;
+  background-color: rgb(1, 57, 57);
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: calc(50% - 250px);
+  margin-top: 300px;
+}
+.form-login label {
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.btn-login{
+  border-radius: 20px;
+  background-color:  cadetblue;
+  border: white solid 3px;
+
+}
+.btn-login:hover{
+  background-color: black;
+  color: white;
+
+}
+
+
+.content-form-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  
+}
+.input-form{
+width: 250px;
+margin-left: calc(50% - 125px);
+margin-top: 25px;
+margin-bottom: 10px;
+}
+
+.container-buttons{
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 600px;
+  margin-left: calc(50% - 300px);
+}
+
+.inputs-container{
+  margin-top: 00px;
+  width: 600px;
+  color: white;
+  border: 0.5px solid black;
+  margin-left: 0vw;
+ 
+  /* box-shadow: 1px 1px 1px 1px black; */
+}
+
+.home-container{
+  
+  margin-left: 10vw;
+  
+}
+/* container litttle console */
+
+.img-chat {
+  width: 300px;
+  height: 300px;
+}
+.img-container{
+  position: absolute;
+  left: 100px;
+color: white;
+  top: 100px;
+}
+
+.little-console-container{
+  background-image: url("./components/assets/fondologo-removebg-preview.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  box-sizing: 1px 1px 1px 1px black;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 850px;
+  top: 50px;
+}
+
+
+/* messages seccion */
+
+.container-messages{
+  background-color: green;
+  color: white;
+width: 39.2vw;
+margin-left: -10vw;
+border-radius: 10px;
+}
+
+/* Usuarios conectados */
+
+.users-conected-container{
+  position: absolute;
+  left:650px;
+  top: 50px;
+  border: 0.5px solid black;
+  box-sizing: 1px 1px 1px 2px black;
+  width: 200px;
+  height: 500px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+}
+
+/* Messages */
+
+.message{
+  background-color:rgba(0 0 0 0.5);
+  color: white;
+  width: 200px;
+  height: auto;
+   
+}
+
+.container-message{
+margin-left: 0px;
+
+  /* background-color:  */
+}
+
+.chat-container{
+  text-align: center;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: -10vw;
+  background-color: rgba(0, 0, 255, 0.5);
+  overflow-y: auto;
+}
+
+
+
+.btn{
+  border-radius: 20px;
+  background-color:  cadetblue;
+  border: white solid 3px;
+width: 200px;
+padding: 2.5px;
+margin-left: center;
+}
+.btn:hover{
+  background-color: black;
+  color: white;
+
+}
+
+.btn-send{
+  margin-left: calc(50% - 100px);
+}
+.input-messsage{
+  width: 300px;
+  height: 100px;
+  margin-left: calc(50% - 150px);
+}
+
+/* enviar mensaje */
+
+
+.form-sendmessage{
+  display: flex;
+  flex-direction: column;
+}
