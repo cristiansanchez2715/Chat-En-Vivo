@@ -8,8 +8,8 @@ function Home({receiveMessage, setReceiveMessage, chatContainerRef, setUsersCone
 const breakPointMessage = "http://localhost:4000"
    const [activarChat, setActivarChat] = useState(false)
   const [challangeComponent, setChallangeComponent] = useState(false)
- 
-
+  const [actualization, setActualization] = useState(0) 
+  let [activeChat, setActiveChat] = useState(false)
 // const challengeComponentFunction1 =() => {
 //   if(challangeComponent === false){
 //     setChallangeComponent(true)
@@ -48,7 +48,21 @@ const addUserConected = () => {
 addUserConected()
   }, [])
 
+  useEffect(() => {
+    const miFuncion = () => {
+      setActualization(0)
+      // setTimeout(() => {if(actualization < 100){
+        setActualization((prevActualization) => prevActualization + 1)
+      // }}, 50)
+    };
 
+    
+    const intervalId = setInterval(miFuncion, 5000);
+
+    return () => {
+     clearInterval(intervalId);
+    };
+  }, [activeChat]); 
 
 useEffect(() => {
 // challengeComponentFunction2()
@@ -76,7 +90,7 @@ useEffect(() => {
     fetchData();
   }
   // setTimeout(challengeComponentFunction1(), 1000)
-}, [sendMessage]);
+}, [actualization, sendMessage]);
 
 
 
@@ -89,6 +103,7 @@ const logOut = () => {
 
 const activarChatFunction = () => {
   setActivarChat(!activarChat)
+  setActiveChat(!activeChat)
 }
 const handleInterval = () => {
   // Lógica que se ejecutará cada segundo
